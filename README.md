@@ -6,13 +6,12 @@ commit changes in back-end code in backend branch
 
 how to commit
 
-initialize git repo - git init
-check git status - git status
-add file to local repo - git add .
-check status{shows all the files to be comitted}
-commit the repo - git commit -m 'your message'
-copy this url -
-add the remote orgin - git remote add origin 'your_url_name'
-push to github - git push -u origin 'branch name'
+1) initialize git repo - git init
+2) check git status - git status
+3) add file to local repo - git add .
+4) check status (shows all the files to be comitted)
+5) commit the repo - git commit -m "your message" (message can be anything)
+6) add the remote orgin - git remote add origin https://github.com/thaufi017/DOVS.git
+7) push to github - git push -u origin branch name (brach name = frontend or backend)
 
 
