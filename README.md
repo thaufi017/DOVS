@@ -1,8 +1,7 @@
 # DOVS
 Repository for mini project-DOVS
 
-*)commit changes in front-end code in frontend branch 
-*)commit changes in back-end code in backend branch
+commit changes in front-end code in frontend branch and commit changes in back-end code in backend branch
 
 how to commit
 
