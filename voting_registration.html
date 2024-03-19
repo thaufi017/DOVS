@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Registration</title>
+    <style>
+        /* CSS styles can be added here or in an external stylesheet */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin:auto;
+            padding: 0;
+        }
+        
+        nav {
+            background-color: #444;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            text-decoration-color: #fff;
+            position:absolute;
+            top: 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration:solid;
+            padding: 10px 20px;
+            
+        }
+     
+        .container {
+            width: 40%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 230px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Voter Registration</h1>
+        <form action="registration_process.php" method="POST">
+            <label for="name">Account Number</label>
+            <input type="text" id="name" name="name" required>
+
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+          
+
+            <input type="submit" value="Register" >
+        </form>
+    </div>
+    <nav>
+        <a href="file:///C:/Users/sudhin/Desktop/project/userhome.html">Home</a>
+        <a href="#">voting area</a>
+        <a href="#">result</a>
+        <a href="#">logout</a>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<<>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .popup{
+        position:relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .popup.popuptext{
+        visibility: hidden;
+        width: 160px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -80px;
+    
+    }
+</style>
+<body>
+    <div class="popup">
+        onclick="myFunction()">click me!
+        <span class="popuptext" id="mypopup">popup tyext........</span>
+
+    </div>
+</body>
+</html>
