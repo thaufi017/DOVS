@@ -1,5 +1,5 @@
 # DOVS
-Repository for mini project-DOVS
+Repository for mini project-DOVS(Decentralized Online Voting System using BlockChain) 
 
 commit changes in front-end code in frontend branch and commit changes in back-end code in backend branch
 
