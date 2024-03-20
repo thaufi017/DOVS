@@ -13,7 +13,7 @@ contract Voting {
 
     struct Voter {
         bool hasVoted;
-        uint vote;
+        //uint vote;
         bool isRegistered;
     }
 
@@ -80,6 +80,37 @@ contract Voting {
         require(_contestantId > 0 && _contestantId <= contestantsCount);
         contestants[_contestantId].voteCount++;
         voters[msg.sender].hasVoted = true;
-        voters[msg.sender].vote = _contestantId;
+        //voters[msg.sender].vote = _contestantId;
+    }
+    function winner() public view validState(PHASE.done) returns (uint) {
+        uint maxVotes = 0;
+        uint currentWinnerId = 0;
+        bool hasWinner = false;
+        for (uint i = 1; i <= contestantsCount; i++) {
+            if (contestants[i].voteCount > maxVotes) {
+                maxVotes = contestants[i].voteCount;
+                currentWinnerId = i;
+                hasWinner = true;
+            } else if (contestants[i].voteCount == maxVotes) {
+                hasWinner = false;
+            }
+        }
+        if (hasWinner) {
+            return currentWinnerId;
+        } else {
+            return 0;
+        }
+    }
+    function getVoteCounts()
+        public
+        view
+        validState(PHASE.done)
+        returns (uint[] memory)
+    {
+        uint[] memory voteCounts = new uint[](contestantsCount);
+        for (uint i = 1; i <= contestantsCount; i++) {
+            voteCounts[i - 1] = contestants[i].voteCount;
+        }
+        return voteCounts;
     }
 }
