@@ -14,5 +14,7 @@ how to commit
 7) to create a new branch = git checkout -b "branchname"
 8) to delete a existing branch = git branch -d "branchname"
 9) push to github = git push -u origin branch name (brach name = frontend or backend)
+10) to clone from master = git clone https://github.com/thaufi017/DOVS.git
+11) to clone from a branch = git clone -b branchname https://github.com/thaufi017/DOVS.git
 
 
