@@ -1,0 +1,80 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    /* Change font family */
+    background-color: #f0f0f0;
+    margin: auto;
+    padding: 0;
+}
+
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    /* Change font family */
+}
+
+.container {
+    width: 60%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration-container,
+.login-container {
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+    border: 2px solid #333;
+}
+
+.registration-container {
+    border: 2px solid #333;
+}
+
+h1,
+.login-heading {
+    text-align: center;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+    /* Change font family */
+    padding: 0 10px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    /* Change font family */
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}

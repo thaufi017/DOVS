@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:\Users\sruth\OneDrive\Documents\Mini Project\DOVS\css\voting_registration.css">
+    <link rel="stylesheet" href="css\voting_registration.css">
     <title>Voter Registration</title>
 </head>
 <body>
+    <header>
+        <h1>DOVS</h1>
+    </header>
+    <nav>
+        <a href="userhome.html">Home</a>
+        <a href="voting_registration.html">Voter Registration</a>
+        <a href="votingarea.html">Voting Area</a>
+        <a href="vot_res.html">Result</a>
+        <a href="index.html">Logout</a>
+    </nav>
     <div class="container">
         <h1>Voter Registration</h1>
         <form action="registration_process.php" method="POST">
             <label for="name">Account Number</label>
             <input type="text" id="name" name="name" required>
-
-
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-
-          
-
             <input type="submit" value="Register" >
         </form>
     </div>
-    <nav>
-        <a href="userhome.html">Home</a>
-        <a href="#">voting area</a>
-        <a href="#">result</a>
-        <a href="#">logout</a>
-    </nav>
+    
 </body>
 </html>

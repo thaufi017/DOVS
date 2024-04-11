@@ -1,0 +1,100 @@
+body {
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    /* Change font family */
+    background-color: #f0f0f0;
+    margin: auto;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    /* Change font color to white */
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    text-decoration-color: #fff;
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: solid;
+    padding: 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    /* Change font family */
+}
+
+.container {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    position: relative;
+}
+
+div h1 {
+    text-align: center;
+    color: #333;
+    /* Change font color */
+    font-family: 'Times New Roman', Times, serif;
+    /* Change font family */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    /* Change font family */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    /* Change font family */
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    /* Change font family */
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: navajowhite;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    /* Change font family */
+}

@@ -1,0 +1,76 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    /* Change font family */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    /* Change font family */
+}
+
+.container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 500px;
+    width: 500px;
+    margin-right: 20px;
+}
+
+.buttons {
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 160px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid #333;
+}
+
+.buttons section {
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: rgb(65, 65, 54);
+    color: #fff;
+    border: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-size: larger;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+.buttons h2 {
+    font-family: 'Times New Roman', Times, serif;
+    /* Change font family */
+}

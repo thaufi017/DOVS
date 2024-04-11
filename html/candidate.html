@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:\Users\sruth\OneDrive\Documents\Mini Project\DOVS\css\candidate.css">
+    <link rel="stylesheet" href="css\candidate.css">
     <title>Candidate Portal</title>
 </head>
 <body>
+    <header>
+        <h1>DOVS</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="candidate.html">Candidate</a>
+        <a href="cand_list.html">Candidate List</a>
+        <a href="approval.html">Voter Approval</a>
+        <a href="adminresult.html">Phase</a>
+        <a href="index.html">Logout</a>
+    </nav>
     <div class="container">
-        <h1>Candidate portal</h1>
+        <h1>Candidate Registration</h1>
         <form action="registration_process.php" method="POST">
             <label for="name">Candidate name</label>
             <input type="text" id="name" name="name" required>
-
-
             <label for="age">Age</label>
             <input type="text" id="age" name="age" required>
-
-           
-            <label for="password">Organization Name</label>
-            <input type="text" id="organization_name" name="organization_name" required>
+            <label for="party">Party</label>
+            <input type="text" id="party" name="party" required>
             <button class="open-button" onclick="openForm()">Save</button>
-           
         </form>
     </div>
-
-    <nav>
-        <a href="home.html">Home</a>
-
-    </nav>
     <div class="form-popup" id="myform">
         <form action=""> </form>
     </div>
