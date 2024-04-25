@@ -24,7 +24,7 @@ var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'dovs.blockchain@gmail.com',
-    pass: 'qwerty@123'
+    pass: 'zvej osta dcvr dwrt'
   }
 });
 
@@ -55,7 +55,7 @@ router.post('/registerdata', function (req, res) {
     if (is_registerd != 'YES') {
       if (age >= 18) {
         var mailOptions = {
-          from: 'pcworkers007@gmail.com',
+          from: 'dovs.blockchain@gmail.com',
           to: email,
           subject: "Please confirm your Email account",
           text: "Hello, Your otp is " + rand
