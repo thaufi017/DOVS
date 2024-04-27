@@ -216,7 +216,7 @@ App = {
           return instance.vote(contestantId, { from: selectedAccount });
         }).then(function (result) {
           // Voting successful
-          console.log('Vote cast successfully');
+          $('#voteSuccessModal').modal('show'); // Show the success modal
         }).catch(function (err) {
           console.error('Error casting vote:', err);
         });
@@ -232,6 +232,7 @@ App = {
       console.error('MetaMask extension not detected');
     }
   },
+
 
 
 
@@ -288,12 +289,15 @@ App = {
       };
       return instance.voterRegisteration(add, txOptions); // Pass the transaction options to the contract function
     }).then(function (result) {
+      // Registration successful
+      $('#registrationSuccessModal').modal('show'); // Show the success modal
       $("#content").hide();
       $("#loader").show();
     }).catch(function (err) {
       console.error(err);
     })
   }
+
 
 
 };
